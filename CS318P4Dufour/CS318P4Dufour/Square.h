@@ -1,6 +1,8 @@
 #ifndef SQUARE_H
 #define SQUARE_H
+
 #include "Rectangle.h"
+
 class Square : public Rectangle
 {
 public:
@@ -12,4 +14,5 @@ public:
 	void print() const; // output Square object
 private:
 	double sideLength; // length of sides
-}; // end class Square#endif
+}; // end class Square
+#endif

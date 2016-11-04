@@ -1,6 +1,7 @@
 #ifndef CIRCLE_H
 #define CIRCLE_H
 #include "TwoDimensionalShape.h"
+
 class Circle : public TwoDimensionalShape
 {
 public:
@@ -12,4 +13,5 @@ public:
 	void print() const; // output Circle object
 private:
 	double radius; // Circle's radius
-}; // end class Circle#endif
+}; // end class Circle
+#endif
