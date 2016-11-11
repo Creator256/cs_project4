@@ -1,6 +1,6 @@
 #ifndef SQUARE_H
 #define SQUARE_H
-
+#include <iostream>
 #include "Rectangle.h"
 
 class Square : public Rectangle
@@ -11,7 +11,7 @@ public:
 
 	virtual double getSideLength() const; // return length of sides
 	virtual double getArea() const; // return area of Square
-	void print() const; // output Square object
+	void print(ostream &out) const; // output Square object
 private:
 	double sideLength; // length of sides
 }; // end class Square

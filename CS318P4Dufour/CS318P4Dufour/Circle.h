@@ -10,7 +10,7 @@ public:
 
 	virtual double getRadius() const; // return radius
 	virtual double getArea() const; // return area
-	void print() const; // output Circle object
+	void print(ostream &out) const; // output Circle object
 private:
 	double radius; // Circle's radius
 }; // end class Circle

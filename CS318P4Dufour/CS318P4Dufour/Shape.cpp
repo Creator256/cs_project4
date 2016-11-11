@@ -20,6 +20,6 @@ double Shape::getCenterY() const
   // overloaded output operator
 ostream & operator<<(ostream &out, Shape &s)
 {
-	s.print();
+	s.print(out);
 	return out;
 } // end overloaded output operator function

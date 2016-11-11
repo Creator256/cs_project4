@@ -11,7 +11,7 @@ double Square::getArea() const {
 	return sideLength*sideLength;
 }
 
-void Square::print() const {
-	std::cout << "Square with side length " << getSideLength() << "; center at (" << getCenterX() << ", "
+void Square::print(ostream &out) const {
+	out << "Square with side length " << getSideLength() << "; center at (" << getCenterX() << ", "
 		<< getCenterY() << ")" << std::endl << "Area: " << getArea() << std::endl;
 }

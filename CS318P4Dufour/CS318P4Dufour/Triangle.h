@@ -1,5 +1,6 @@
 #ifndef TRIANGLE_H
 #define TRIANGLE_H
+#include <iostream>
 #include "TwoDimensionalShape.h"
 class Triangle : public TwoDimensionalShape
 {
@@ -17,7 +18,7 @@ public:
 	virtual double getSide2Length() const; // return length of side2 of triangle
 		virtual double getSide3Length() const; // return length of side3 of triangle
 		virtual double getArea() const; // return area of triangle
-	void print() const; // output triangle object
+	void print(ostream &out) const; // output triangle object
 private: //some redundancy built-in sides can be computed from points, but we store the side lengths
 		double x1, y1; // numbering of points is arbitrary but fixed after chosen
 	double x2, y2; // second of three

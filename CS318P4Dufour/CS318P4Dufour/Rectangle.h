@@ -10,7 +10,7 @@ public:
 	virtual double getLength() const; // return length of Rectangle
 	virtual double getWidth() const; // return the width of Rectangle
 	virtual double getArea() const; // return area of Rectangle
-	void print() const; // output Rectangle object
+	void print(ostream &) const; // output Rectangle object
 private:
 	double length;
 	double width;

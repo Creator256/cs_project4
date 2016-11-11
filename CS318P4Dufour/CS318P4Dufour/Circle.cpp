@@ -12,7 +12,7 @@ double Circle::getArea() const {
 	return radius*radius*MATH_CONSTANTS::PI;
 }
 
-void Circle::print() const {
-	std::cout << "Circle with radius " << radius << "; center at (" << getCenterX() <<
+void Circle::print(ostream &out) const {
+	out << "Circle with radius " << radius << "; center at (" << getCenterX() <<
 		", " << getCenterY() << ")" << std::endl << "Area: " << getArea() << std::endl;
 }
