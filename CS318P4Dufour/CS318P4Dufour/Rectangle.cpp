@@ -18,6 +18,5 @@ double Rectangle::getArea() const {
 
 void Rectangle::print(ostream &out) const {
 	out << "Rectangle with length " << getLength() << " and width " << getWidth() <<
-		"; center at (" << getCenterX() << ", " << getCenterY() << ")" << std::endl
-		<< "Area: " << getArea() << std::endl;
+		"; center at (" << getCenterX() << ", " << getCenterY() << ")" << std::endl;
 }

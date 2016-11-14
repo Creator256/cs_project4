@@ -14,5 +14,5 @@ double Circle::getArea() const {
 
 void Circle::print(ostream &out) const {
 	out << "Circle with radius " << radius << "; center at (" << getCenterX() <<
-		", " << getCenterY() << ")" << std::endl << "Area: " << getArea() << std::endl;
+		", " << getCenterY() << ")" << std::endl;
 }

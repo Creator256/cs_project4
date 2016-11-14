@@ -1,7 +1,7 @@
 #include "Square.h"
 
 // default constructor with parameters: side, x, y
-Square::Square(double side, double x, double y) : Rectangle(side, side, x, y) {}
+Square::Square(double side, double x, double y) : Rectangle(side, side, x, y), sideLength(side) {}
 
 double Square::getSideLength() const {
 	return sideLength;
@@ -13,5 +13,5 @@ double Square::getArea() const {
 
 void Square::print(ostream &out) const {
 	out << "Square with side length " << getSideLength() << "; center at (" << getCenterX() << ", "
-		<< getCenterY() << ")" << std::endl << "Area: " << getArea() << std::endl;
+		<< getCenterY() << ")" << std::endl;
 }
