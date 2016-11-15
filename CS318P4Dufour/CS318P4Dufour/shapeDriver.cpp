@@ -15,7 +15,7 @@ using std::vector;
 #include "Cube.h"
 int main() 
 {
-	const int NUMBER_OF_SHAPES = 6;
+	const int NUMBER_OF_SHAPES = 10;
 	// create vector shapes
 	vector < Shape * > shapes(NUMBER_OF_SHAPES);
 	// initialize vector with Shapes
@@ -25,6 +25,10 @@ int main()
 	shapes[3] = new Cube(2.2);
 	shapes[4] = new Triangle(0.0, 0.0, 0.0, 3.0, 4.0, 0.0);
 	shapes[5] = new Rectangle(3.0, 4.0, 3.0, 4.0);
+	shapes[6] = new Triangle(2.0, 3.0, 1.0, 3.0, 0.0, 0.0);
+	shapes[7] = new Triangle(7.0, 0.0, 10.0, 10.0, -2.0, -4.0);
+	shapes[8] = new Triangle(0.0, 0.0, 0.0, 1.0, 1.0, 0.0);
+	shapes[9] = new Triangle(4.0, 4.0, 4.0, 4.0, 4.0, 4.0);
 	// output Shape objects and display area and volume as appropriate
 		for (int i = 0; i < NUMBER_OF_SHAPES; i++)
 		{
