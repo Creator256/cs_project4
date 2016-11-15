@@ -7,9 +7,11 @@ class ThreeDimensionalShape : public Shape
 {
 public:
 	// default constructor needs a third coordinate z and getZ() method
-	ThreeDimensionalShape(double x, double y) : Shape(x, y) { }
+	ThreeDimensionalShape(double x, double y, double z) : Shape(x, y) { }
 
 	virtual double getArea() const = 0; // area of 3-dimensional shape
 	virtual double getVolume() const = 0; // volume of 3-dimensional shape
+protected:
+	double zCenter;
 }; // end class ThreeDimensionalShape
 #endif

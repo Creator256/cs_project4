@@ -9,15 +9,15 @@ public:
 	Triangle(double, double, double, double, double, double);
 	//note no default, 0-argument constructor
 	virtual double getPoint1x() const { return x1; } //get coordinates for each of the three points forming the triangle.
-		virtual double getPoint1y() const { return y1; }
+	virtual double getPoint1y() const { return y1; }
 	virtual double getPoint2x() const { return x2; }
 	virtual double getPoint2y() const { return y2; }
 	virtual double getPoint3x() const { return x3; }
 	virtual double getPoint3y() const { return y3; }
 	virtual double getSide1Length() const; // return length of side1 (which is side1 arbitrary but fixed) of triangle
 	virtual double getSide2Length() const; // return length of side2 of triangle
-		virtual double getSide3Length() const; // return length of side3 of triangle
-		virtual double getArea() const; // return area of triangle
+	virtual double getSide3Length() const; // return length of side3 of triangle
+	virtual double getArea() const; // return area of triangle
 	void print(ostream &out) const; // output triangle object
 private: //some redundancy built-in sides can be computed from points, but we store the side lengths
 		double x1, y1; // numbering of points is arbitrary but fixed after chosen
